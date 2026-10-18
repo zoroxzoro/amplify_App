@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#ffb575", "primary-container": "#245b43", "on-error-container": "#93000a", "error": "#ba1a1a", "secondary-fixed-dim": "#c1c8c1", "on-primary-fixed-variant": "#175039", "on-tertiary": "#ffffff", "outline-variant": "#c0c9c1", "inverse-surface": "#2d322b", "on-error": "#ffffff", "background": "#f6fbf1", "on-primary-fixed": "#002114", "secondary-container": "#dde4dc", "surface-container-highest": "#dfe4da", "secondary-fixed": "#dde4dc", "secondary": "#59605a", "tertiary-container": "#7c4300", "primary-fixed-dim": "#9ad3b4", "on-secondary-fixed": "#161d18", "on-secondary-fixed-variant": "#414843", "surface": "#f6fbf1", "inverse-on-surface": "#eef2e8", "on-secondary": "#ffffff", "on-surface-variant": "#404943", "on-primary": "#ffffff", "surface-container-low": "#f1f5eb", "on-surface": "#181d17", "surface-dim": "#d7dcd2", "primary": "#05432d", "tertiary-fixed-dim": "#ffb77a", "inverse-primary": "#9ad3b4", "surface-container-high": "#e5eae0", "error-container": "#ffdad6", "surface-container": "#ebefe6", "tertiary": "#5b2f00", "surface-bright": "#f6fbf1", "surface-container-lowest": "#ffffff", "on-background": "#181d17", "surface-variant": "#dfe4da", "on-tertiary-fixed": "#2e1500", "on-primary-container": "#98d1b2", "on-secondary-container": "#5f6660", "surface-tint": "#326850", "tertiary-fixed": "#ffdcc2", "primary-fixed": "#b5efd0", "outline": "#707973", "on-tertiary-fixed-variant": "#6d3a00" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-sm": "0.75rem", "space-xs": "0.25rem", "margin": "1.25rem", "gutter": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-desktop": "2.5rem", "space-xl": "2rem", "margin-mobile": "1rem", "gutter-lg": "1.5rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-micro": ["Plus Jakarta Sans"], "headline-lg": ["Newsreader"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Newsreader"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"] }, "fontSize": { "headline-sm": ["17px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-micro": ["10.5px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "display-lg": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.005em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["21px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Navigate back" class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-secondary-container/40 active:bg-secondary-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><div class="flex flex-col min-w-0"><span class="font-label-micro text-label-micro uppercase tracking-wider text-secondary">Amplify Dispatch</span><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Editorial Campaign Story</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Bookmark story" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-secondary-container/40 active:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-[20px]">bookmark</span></button><button aria-label="Share campaign" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-secondary-container/40 active:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-[20px]">share</span></button><div class="w-8 h-8 ml-1 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- Editorial Top Metadata Strip -->
+<div class="px-margin pt-space-md pb-space-sm">
+<div class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-secondary-container/80 text-primary">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-primary">Civic Dossier Nº 408 • Independently Audited</span>
+</div>
+</div>
+<!-- Primary Headline Group -->
+<div class="px-margin pb-space-md flex flex-col gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface leading-tight font-headline-md tracking-tight">
+      Why Urban Heat Islands Demand Mandatory Green Buffer Corridors
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium leading-relaxed">
+      Protecting urban canopy corridors in expanding manufacturing perimeters before thermal lock-in becomes irreversible.
+    </p>
+</div>
+<!-- Author & Byline Card -->
+<div class="px-margin pb-space-lg">
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-11 h-11 rounded-full overflow-hidden shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Portrait of Dr. Ananya Sen, a South Asian woman environmental scientist with glasses and a field jacket, natural daylight in an urban park background, warm editorial documentary tone, muted forest greens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW052RC42aRE7FMFoPTh3-s4x7xUUubEbhMiYAd56jcbQISFzqJuk4cA_eAVp_MPvuJ1Ue2BKU1xd50WWLCH1jjlAjw51F6VCSIp1nodPgvuLG05HOJfkqT3eoHra7baRSpuOkh0GOZYIysDvOi81HfYlXA314OUOZXnuDuJbGHyGbydZt6rDXuvEDV1ip33tUYdqt1F87zm-EuPZfQ3unhO1U1A5sgPzISSiwTxYHEg3FgL39U2k"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate">Dr. Ananya Sen</span>
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Urban Ecologist • Center for Ecological Design</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-space-xs text-right">
+<span class="font-label-micro text-label-micro uppercase text-secondary font-semibold">Published</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Oct 14, 2024</span>
+</div>
+</div>
+</div>
+<!-- Hero Visual Asset -->
+<div class="px-margin pb-space-lg">
+<div class="relative w-full h-64 rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Stunning cinematic drone shot capturing a sharp territorial boundary in a metropolis. On the left side, dense dusty industrial concrete factories and asphalt roads radiating shimmering heat waves. On the right side, an ancient, lush dark green tree canopy over residential rooftops. Deep forest greens, slate greys, warm afternoon sunlight, editorial drone photojournalism style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhPy4yd_8GSsyQH3C5juCxIfauGpXZe1vk7nTDudcp7F-zVnfUIl7V_CkiEJaiy2qsG0UCXC3mWIQc65ZgDo25r9_ZN8gsDn9wV8kazcKrNpGIH8Y-fon6zUI7kL_52c44iljQBupIWC4u2_83lN3CxRNbpytRDDe8eXEu06CL8cZAzy29Prxr0re5j6G9FfYyBGSai6vCh0OmaOBNFWQA_7ZGPW6j4w4ftThXob0m036G3QjL3lY"/>
+<div class="absolute bottom-0 inset-x-0 p-space-sm bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent flex items-center justify-between text-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary-fixed">photo_camera</span>
+<span class="font-label-micro text-label-micro text-surface-bright tracking-wide">Pehwa Industrial Ring Sector 4 • Aerial Thermography</span>
+</div>
+<span class="font-label-micro text-label-micro text-surface-container-high px-1.5 py-0.5 rounded bg-surface/20 backdrop-blur-sm">Verified Geotag</span>
+</div>
+</div>
+</div>
+<!-- Editorial Amplification Mandate Notice -->
+<div class="px-margin pb-space-xl">
+<div class="p-space-md rounded-xl bg-surface-container-high shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+<span class="font-label-micro text-label-micro uppercase font-bold tracking-wider">Amplification Mandate</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        This is an independent civic broadcast pool, <strong class="text-on-surface font-semibold">NOT</strong> a personal charity or donation. 100% of community contributions directly purchase geo-targeted digital advertising reach, municipal newspaper syndication, and verified public briefings.
+      </p>
+</div>
+</div>
+<!-- Funding & Distribution Progress Panel -->
+<div class="px-margin pb-space-xl">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-baseline justify-between">
+<div class="flex flex-col">
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-secondary">Broadcasting Pool Target</span>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">₹1,42,000</span>
+<span class="font-body-sm text-body-sm text-secondary">of ₹1,80,000</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-primary font-headline-sm text-body-sm font-semibold">
+          78% Funded
+        </span>
+</div>
+<!-- Linear Metric Gauge -->
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-2 rounded-full bg-secondary-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 78%;"></div>
+</div>
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-micro text-label-micro">Threshold: ₹1,50,000 to trigger wave 1</span>
+<span class="font-label-micro text-label-micro font-medium text-primary">₹38,000 remaining</span>
+</div>
+</div>
+<!-- Tri-stat Grid -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<div class="flex items-center gap-1 text-primary mb-0.5">
+<span class="material-symbols-outlined text-[15px]">group</span>
+<span class="font-label-micro text-label-micro uppercase font-semibold text-secondary">Partners</span>
+</div>
+<span class="font-headline-sm text-body-md font-bold text-on-surface">412</span>
+<span class="font-label-micro text-label-micro text-secondary truncate">Civic Backers</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<div class="flex items-center gap-1 text-primary mb-0.5">
+<span class="material-symbols-outlined text-[15px]">timer</span>
+<span class="font-label-micro text-label-micro uppercase font-semibold text-secondary">Closing</span>
+</div>
+<span class="font-headline-sm text-body-md font-bold text-on-surface">6 Days</span>
+<span class="font-label-micro text-label-micro text-secondary truncate">To Broadcast</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<div class="flex items-center gap-1 text-primary mb-0.5">
+<span class="material-symbols-outlined text-[15px]">podcasts</span>
+<span class="font-label-micro text-label-micro uppercase font-semibold text-secondary">Est. Scope</span>
+</div>
+<span class="font-headline-sm text-body-md font-bold text-on-surface">185,000</span>
+<span class="font-label-micro text-label-micro text-secondary truncate">Impressions</span>
+</div>
+</div>
+<p class="font-label-micro text-label-micro text-secondary text-center leading-normal">
+        *Configurable demo reach estimate based on certified regional programmatic ad costs, not a commercial guarantee.
+      </p>
+</div>
+</div>
+<!-- Editorial Story Body -->
+<article class="px-margin pb-space-xl flex flex-col gap-space-md">
+<!-- Paragraph with Dropcap -->
+<div class="font-display-lg text-body-lg text-on-surface leading-relaxed">
+<span class="float-left text-display-lg font-headline-lg text-primary mr-2.5 leading-none font-bold">M</span>
+      unicipal heat vulnerability is no longer an abstract climate forecast; it is an active zoning catastrophe. As industrial land consolidation accelerates along our peripheral development corridors, ancient neem and tamarind canopies are cleared overnight to pour unshaded asphalt logistics bays and unventilated corrugated steel factories.
+    </div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+      Between June and September, radiometric satellite readings documented a steady accumulation of latent thermal energy across these zones. Because asphalt absorbs roughly 95% of incoming solar radiation, nighttime dissipation cycles have completely collapsed, trapping lower-income neighborhoods in a perpetual convective greenhouse.
+    </p>
+<!-- Editorial Subheading -->
+<div class="pt-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">
+        Empirical Field Findings: 6°C Surface Temperature Spikes
+      </h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+      Our team deployed FLIR handheld radiometers across 40 continuous checkpoints along the border between the Udyog Kendra industrial perimeter and the dense resettlement colonies of Anand Nagar. The differential was staggering: within 12 meters of leaving shaded street trees, ambient ground temperatures shot upward.
+    </p>
+<!-- Key Stat Callout Block -->
+<div class="p-space-md rounded-xl bg-primary-container text-on-primary flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed-dim">device_thermostat</span>
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-primary-fixed-dim">Sensor Logged Variance</span>
+</div>
+<div class="font-display-lg text-display-lg font-bold leading-tight">
+        +4.8°C Microclimate Differential
+      </div>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+        Observed sustained wet-bulb temperature deviation at 21:00 hrs inside non-canopied residential perimeters compared to streets preserving a continuous 30-meter tree buffer.
+      </p>
+</div>
+<!-- Inline Field Photography -->
+<div class="rounded-xl overflow-hidden shadow-sm bg-surface-container flex flex-col">
+<div class="w-full h-56 relative">
+<img class="w-full h-full object-cover" data-alt="A handheld digital infrared thermal scanner measuring a scorching concrete factory wall boundary in sharp focus. The screen of the thermal tool shows radiant orange and purple heat heat-signatures, against a stark industrial background, realistic high resolution documentary photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSOSPk67yiL2nzp5i356h7mWobRzdLdA1GogE3AUR4ufg_RMtcajpPnfBZ1Lvb95WwkVPFCF7wZRTbkoH1Y62VExijnXwBNcQBGCKB6y4EEucJhfCuV0SLqRCrhmbtIiXDphTQjl8WWr81nYafH_bxRdGpWZlGVVVLon8_iSMefAGYmpc-8MDAHBtN7CPUVsOlKRMEQw8E0k66CtQNQ9B-h4oqzjA2e1oxRQviRaH9qf3F_7tj0Yc"/>
+<div class="absolute top-space-sm left-space-sm px-2 py-0.5 rounded bg-on-surface/80 text-surface-bright text-label-micro font-label-micro">
+          Field Sensor Telemetry #24
+        </div>
+</div>
+<div class="p-space-sm bg-surface-container-low text-on-surface-variant">
+<p class="font-body-sm text-body-sm leading-snug">
+          Thermal sensor capture against boundary perimeter concrete showing surface heat retention peaking at 52.3°C at 17:30 IST.
+        </p>
+</div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+      Without legally mandated municipal setbacks requiring 25% canopy preservation across industrial perimeters, thermal lock-in will become irreversible within three fiscal development cycles. Amplifying this briefing directly to the ward’s voting public and executive planners is the only mechanism to insert buffer amendments before master plans are finalized.
+    </p>
+</article>
+<!-- Visible Supporting Sources Section -->
+<div class="px-margin pb-space-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Verified Sources &amp; Audits</h3>
+<span class="font-label-micro text-label-micro uppercase text-secondary">2 Documents</span>
+</div>
+<!-- Source Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-secondary-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">satellite_alt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">State Meteorological Dept Satellite Thermal Imagery</span>
+<span class="font-label-micro text-label-micro text-secondary truncate">Landsat-8 &amp; MODIS data compilation (2021-2024)</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors shrink-0">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+<!-- Source Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-secondary-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">health_and_safety</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">National Health Services Heat Vulnerability Index</span>
+<span class="font-label-micro text-label-micro text-secondary truncate">Ward-level morbidity risk and emergency admissions</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors shrink-0">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 pt-1 text-secondary">
+<span class="material-symbols-outlined text-[15px] text-primary">fact_check</span>
+<span class="font-label-micro text-label-micro">All creator-supplied data validated by Amplify Investigative Review Desk.</span>
+</div>
+</div>
+<!-- Intended Distribution & Target Audience -->
+<div class="px-margin pb-space-xl flex flex-col gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Target Distribution Strategy</h3>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<!-- Media Channels -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-secondary">Syndication Channels</span>
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">newspaper</span> Local Digital Press Portals
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">share_location</span> Regional Meta Feeds
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">chat</span> WhatsApp Civic Channels
+          </span>
+</div>
+</div>
+<!-- Geo & Demographic Focus -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-secondary">Geographic &amp; Persona Target</span>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-on-surface font-semibold text-body-sm font-headline-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">my_location</span>
+            Radius: Within 15km of Pehwa Industrial Ring
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Targeting 110,000 voting residents in contiguous wards, plus direct ad-spend delivery to 62 municipal council members and public works engineers.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Transparent Fund Allocation (Expanded State) -->
+<div class="px-margin pb-space-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Escrow Fund Allocation</h3>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-micro text-label-micro font-bold uppercase">Audited</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<!-- Allocation Bar Segmented -->
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-3 rounded-full overflow-hidden flex bg-surface-container">
+<div class="h-full bg-primary" style="width: 88%;"></div>
+<div class="h-full bg-tertiary-container" style="width: 8%;"></div>
+<div class="h-full bg-outline" style="width: 4%;"></div>
+</div>
+<div class="flex items-center justify-between text-label-micro font-label-micro text-secondary">
+<span>88% Placement</span>
+<span>8% Review</span>
+<span>4% Escrow</span>
+</div>
+</div>
+<!-- Detailed Breakdown Rows -->
+<div class="flex flex-col gap-space-sm divide-y-0">
+<div class="flex items-start justify-between py-1">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-primary shrink-0"></div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Direct Programmatic &amp; Press Ads</span>
+<span class="font-label-micro text-label-micro text-secondary">Purchases verified audience impressions</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-body-md text-body-sm font-bold text-on-surface">₹1,58,400</span>
+<span class="block font-label-micro text-label-micro text-secondary">88%</span>
+</div>
+</div>
+<div class="flex items-start justify-between py-1">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary-container shrink-0"></div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Verification &amp; Post-Run Audit</span>
+<span class="font-label-micro text-label-micro text-secondary">Independent reporter fact-checking desk</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-body-md text-body-sm font-bold text-on-surface">₹14,400</span>
+<span class="block font-label-micro text-label-micro text-secondary">8%</span>
+</div>
+</div>
+<div class="flex items-start justify-between py-1">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-outline shrink-0"></div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Payment Gateway &amp; Escrow Custody</span>
+<span class="font-label-micro text-label-micro text-secondary">Bank compliance and transfer reserves</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-body-md text-body-sm font-bold text-on-surface">₹7,200</span>
+<span class="block font-label-micro text-label-micro text-secondary">4%</span>
+</div>
+</div>
+</div>
+<!-- Refund Guarantee Pill -->
+<div class="p-space-sm rounded-lg bg-surface-container-high flex items-start gap-2">
+<span class="material-symbols-outlined text-[17px] text-primary shrink-0 mt-0.5">security</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+<strong class="text-on-surface font-semibold">100% Escrow Reversal:</strong> If the minimum broadcast threshold of ₹1,50,000 is unreached at deadline, all backer accounts are automatically refunded in full without processing deductions.
+        </p>
+</div>
+</div>
+</div>
+<!-- Interactive Audience Resonance Poll -->
+<div class="px-margin pb-space-xl flex flex-col gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[18px]">how_to_vote</span>
+<span class="font-label-micro text-label-micro uppercase font-bold tracking-wider">Public Pulse</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">
+          Does this issue warrant amplified public distribution?
+        </h4>
+<p class="font-body-sm text-body-sm text-secondary">
+          3,489 verified readers have cast sentiment votes.
+        </p>
+</div>
+<!-- Poll Options List -->
+<div class="flex flex-col gap-space-xs" id="poll-container">
+<!-- Option Yes (Active/Winning) -->
+<button class="w-full relative overflow-hidden p-space-sm rounded-lg bg-surface-container-low text-left transition-all active:scale-[0.99] flex items-center justify-between" onclick="handleVote(this)">
+<div class="absolute inset-0 bg-primary/10 w-[96%] transition-all"></div>
+<span class="relative font-body-sm text-body-sm font-semibold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">check_circle</span>
+            Yes, urgent public priority
+          </span>
+<span class="relative font-body-sm text-body-sm font-bold text-primary">96%</span>
+</button>
+<!-- Option Somewhat -->
+<button class="w-full relative overflow-hidden p-space-sm rounded-lg bg-surface-container-low text-left transition-all active:scale-[0.99] flex items-center justify-between" onclick="handleVote(this)">
+<div class="absolute inset-0 bg-secondary/10 w-[3%] transition-all"></div>
+<span class="relative font-body-sm text-body-sm font-medium text-on-surface-variant">Somewhat relevant</span>
+<span class="relative font-body-sm text-body-sm text-secondary font-medium">3%</span>
+</button>
+<!-- Option No -->
+<button class="w-full relative overflow-hidden p-space-sm rounded-lg bg-surface-container-low text-left transition-all active:scale-[0.99] flex items-center justify-between" onclick="handleVote(this)">
+<div class="absolute inset-0 bg-secondary/10 w-[1%] transition-all"></div>
+<span class="relative font-body-sm text-body-sm font-medium text-on-surface-variant">Not at this time</span>
+<span class="relative font-body-sm text-body-sm text-secondary font-medium">1%</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Space clearance for fixed bottom drawer -->
+<div class="h-24"></div>
+<!-- Sticky Bottom Amplification Bar -->
+<aside class="fixed bottom-0 inset-x-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-4px_20px_rgba(0,0,0,0.06)] pb-safe">
+<div class="px-margin py-3 flex items-center justify-between gap-space-md">
+<div class="flex flex-col min-w-0">
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-secondary font-semibold">Broadcasting</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">₹1,42,000</span>
+<span class="font-label-micro text-label-micro text-primary font-bold">(78%)</span>
+</div>
+</div>
+<!-- Action Button -->
+<button class="flex-1 max-w-[240px] h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center gap-2 shadow-md hover:bg-primary transition-all active:scale-[0.98]">
+<span class="font-headline-sm text-body-md font-semibold tracking-wide">Back Campaign</span>
+<span class="material-symbols-outlined text-[19px]">bolt</span>
+</button>
+</div>
+</aside>
+</div>
+<script>
+  function handleVote(button) {
+    const parent = button.parentElement;
+    const buttons = parent.querySelectorAll('button');
+    buttons.forEach(btn => {
+      btn.classList.remove('ring-2', 'ring-primary');
+    });
+    button.classList.add('ring-2', 'ring-primary');
+  }
+</script></main></body></html>

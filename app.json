@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Amplifund",
+    "slug": "amplifund",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "amplifund",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#f6fbf1",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.amplifund.app"
+    },
+    "android": {
+      "package": "com.amplifund.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#f6fbf1",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#05432d",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 120
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "4366d268-364c-4caf-a9a9-cf866f8dc861"
+      }
+    },
+    "owner": "kaif_1334"
+  }
+}

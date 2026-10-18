@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Amplify</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#161d18", "error-container": "#ffdad6", "inverse-surface": "#2d322b", "surface-tint": "#326850", "background": "#f6fbf1", "on-primary-fixed-variant": "#175039", "on-primary": "#ffffff", "on-background": "#181d17", "outline": "#707973", "tertiary-fixed": "#ffdcc2", "on-error-container": "#93000a", "on-error": "#ffffff", "primary-fixed-dim": "#9ad3b4", "on-primary-fixed": "#002114", "tertiary": "#5b2f00", "secondary-fixed-dim": "#c1c8c1", "secondary-fixed": "#dde4dc", "surface-container-highest": "#dfe4da", "tertiary-fixed-dim": "#ffb77a", "error": "#ba1a1a", "on-tertiary-fixed-variant": "#6d3a00", "on-tertiary": "#ffffff", "on-surface": "#181d17", "on-tertiary-fixed": "#2e1500", "on-primary-container": "#98d1b2", "surface-container-high": "#e5eae0", "primary": "#05432d", "surface-variant": "#dfe4da", "primary-container": "#245b43", "surface-bright": "#f6fbf1", "surface-container-low": "#f1f5eb", "on-tertiary-container": "#ffb575", "inverse-on-surface": "#eef2e8", "surface": "#f6fbf1", "inverse-primary": "#9ad3b4", "secondary-container": "#dde4dc", "surface-dim": "#d7dcd2", "surface-container": "#ebefe6", "on-surface-variant": "#404943", "outline-variant": "#c0c9c1", "on-secondary-container": "#5f6660", "primary-fixed": "#b5efd0", "on-secondary": "#ffffff", "tertiary-container": "#7c4300", "secondary": "#59605a", "on-secondary-fixed-variant": "#414843" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-lg": "1.5rem", "margin": "1.25rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "gutter": "1rem", "gutter-sm": "0.75rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2rem", "margin-desktop": "2.5rem" }, fontFamily: { "body-sm": ["Plus Jakarta Sans"], "label-micro": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Newsreader"], "headline-sm": ["Plus Jakarta Sans"], "display-lg": ["Newsreader"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-micro": ["10.5px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-md": ["21px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "headline-sm": ["17px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.005em", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="min-h-full bg-surface text-on-surface flex flex-col font-body-md"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go back" class="w-11 h-11 -ml-1.5 flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><h1 class="font-headline-md text-headline-md text-on-surface truncate tracking-tight">Profile</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a aria-label="Profile" class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1" data-path="profile" href="#"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Profile Card Section -->
+<div class="px-margin pt-space-md pb-space-lg flex flex-col gap-space-lg">
+<!-- User Identifier & Avatar -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="relative">
+<img class="w-20 h-20 rounded-2xl object-cover shadow-sm bg-surface-container" data-alt="Dignified editorial portrait photograph of Dr. Ananya Sen, an Indian female environmental scholar with thoughtful dark eyes, light-framed spectacles, warm olive skin tone, draped in a tasteful handloom raw silk olive scarf in soft library daylight with muted books in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-gPTtqA-aXIlN-auqYCuR3zD607kNzV5UeAt2KM6FaCDTywCi9n0y1B3WDauAJ82ylAEzT0anAmW2F_P9lkeNS_2tVeF3Kyp2CADNBZuXHpFZjuWRMitOkpI_3XgjXYNLKllNh63KaoUHHA1fJsdZ9DwJLZR1BVbG8kikoZr50PJd655UyzPImnQ5OrLHdYcJMaHGYuslri8TfASN3BXSypiikRhvp24lUt-hJA"/>
+<!-- Verified Steward Floating Medallion -->
+<div class="absolute -bottom-1.5 -right-1.5 w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md ring-2 ring-surface-container-lowest" title="Verified Steward">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<!-- Online / Synced Node Pulse -->
+<span class="absolute top-1 left-1 flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-fixed opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary-container"></span>
+</span>
+</div>
+<div class="flex flex-col items-end gap-space-xs">
+<!-- Verification Pill -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-micro text-label-micro tracking-wider uppercase">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span>KYC Verified</span>
+</div>
+<span class="font-label-micro text-label-micro text-on-surface-variant">Academic Steward</span>
+</div>
+</div>
+<!-- Identity Details -->
+<div class="mt-space-md flex flex-col">
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-medium">Dr. Ananya Sen</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          @ananya_sen <span class="text-outline-variant">•</span> Steward ID #8842-SEN
+        </p>
+<p class="font-label-md text-label-md text-primary font-medium mt-1 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">account_balance</span>
+          Centre for Ecological Design, Bengaluru
+        </p>
+</div>
+<!-- Impact Summary Metric Tiles -->
+<div class="grid grid-cols-3 gap-space-sm mt-space-lg">
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col justify-between">
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase">Amplified</span>
+<span class="font-headline-md text-headline-md text-primary font-semibold mt-1">₹3.22L</span>
+<span class="font-label-micro text-label-micro text-primary-container font-medium mt-0.5">Verified pool</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col justify-between">
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase">Created</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">5</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant mt-0.5">Campaigns</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col justify-between">
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase">Backed</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">14</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant mt-0.5">Syndicates</span>
+</div>
+</div>
+<!-- Steward Controls Row -->
+<div class="flex items-center gap-space-sm mt-space-lg">
+<button class="flex-1 h-11 px-space-md rounded-xl bg-secondary-container text-on-secondary-fixed font-headline-sm text-headline-sm flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-colors active:scale-[0.98]">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Edit Profile</span>
+</button>
+<button class="h-11 px-3.5 rounded-xl bg-surface-container-low text-primary flex items-center justify-center gap-1.5 font-label-md text-label-md hover:bg-surface-container transition-colors active:scale-[0.98]" title="View Certified Credentials">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">badge</span>
+<span>Credentials</span>
+</button>
+</div>
+</div>
+<!-- Section 1: My Amplification Portfolio -->
+<div class="flex flex-col gap-space-xs">
+<div class="px-space-xs flex items-center justify-between">
+<h3 class="font-label-micro text-label-micro tracking-widest uppercase text-on-surface-variant font-bold">Amplification Portfolio</h3>
+<span class="font-label-micro text-label-micro text-primary-container font-medium">Node Active</span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<!-- Row 1: Creator Studio -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">campaign</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">My Campaigns (Creator Studio)</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold shrink-0">Action Needed</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">3 live flights, 1 requires review, 1 draft</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Row 2: Backed Campaigns -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">volunteer_activism</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Backed Campaigns</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed text-[10px] font-bold shrink-0">14 Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">14 initiatives supported • 42,500 verified impressions</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Row 3: Saved Dossiers -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmarks</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Saved Dossiers &amp; Bookmarks</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant shrink-0">8 items</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">8 reading list items &amp; research briefs</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Row 4: Escrow Receipts -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Payment History &amp; Escrow Receipts</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Itemized bank vouchers, tax invoices, UPI clearing</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Section 2: Preferences & Governance -->
+<div class="flex flex-col gap-space-xs">
+<div class="px-space-xs">
+<h3 class="font-label-micro text-label-micro tracking-widest uppercase text-on-surface-variant font-bold">Preferences &amp; Governance</h3>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<!-- Row 1: Notifications -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Notification Preferences</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Real-time flight alerts, milestone updates, editorial notes</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Row 2: Escrow Security -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">lock_reset</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Account &amp; Escrow Security</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Two-factor auth, recovery keys, KYC documentation</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Row 3: Civic Privacy -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">visibility_off</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Civic Privacy &amp; Backer Ledger</span>
+<span class="font-label-micro text-label-micro text-primary-container font-semibold">Protected</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Private by default (initials only on public ledgers)</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Section 3: Institutional Trust & Knowledge -->
+<div class="flex flex-col gap-space-xs">
+<div class="px-space-xs">
+<h3 class="font-label-micro text-label-micro tracking-widest uppercase text-on-surface-variant font-bold">Institutional Trust &amp; Knowledge</h3>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<!-- Row 1: How It Works -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">alt_route</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">How Amplification Works</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">The 3-stage protocol: Draft → Audit → Syndication</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Row 2: Verification Standards -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Verification &amp; Audit Standards (FAQ)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Peer-review criteria, CPM pricing, and refund guarantees</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Row 3: Partner Syndicates -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Partner Syndicates &amp; Press Mastheads</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Meta, Regional Press, WhatsApp Civic Broadcast Nodes</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Row 4: Whitepaper -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Statutory Escrow Protocol Whitepaper</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">RBI-compliant funds segregation &amp; automated reversal</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Section 4: Legal & Community -->
+<div class="flex flex-col gap-space-xs">
+<div class="px-space-xs">
+<h3 class="font-label-micro text-label-micro tracking-widest uppercase text-on-surface-variant font-bold">Legal &amp; Governance Charter</h3>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<!-- Row 1: Guidelines -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Community Editorial Guidelines</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span>
+</a>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Row 2: Terms -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">gavel</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Terms of Message Distribution</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span>
+</a>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Row 3: Privacy & Disclosure -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Privacy Policy &amp; Non-Donation Disclosure</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span>
+</a>
+<div class="h-[1px] bg-surface-container-low mx-space-md"></div>
+<!-- Row 4: Support / Ombudsman -->
+<a class="px-space-md py-3.5 flex items-center gap-space-md hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">contact_support</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Contact Civic Support &amp; Ombudsman</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Sign Out & Build Signature -->
+<div class="flex flex-col items-center gap-space-md pt-space-xs pb-space-lg">
+<button class="w-full h-12 rounded-xl bg-surface-container-lowest text-error font-headline-sm text-headline-sm flex items-center justify-center gap-2 hover:bg-error-container hover:text-on-error-container transition-colors shadow-sm active:scale-[0.99]">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span>Sign Out of Steward Session</span>
+</button>
+<div class="flex flex-col items-center text-center px-space-md gap-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-micro text-label-micro">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>Amplify Mobile v2.4.1 (Build 8904)</span>
+</div>
+<p class="font-label-micro text-label-micro text-outline leading-tight">
+          RBI-Compliant Escrow Node • Indian Civic Syndication Protocol<br/>
+          Cryptographic Ledger Sync: Block #249,112
+        </p>
+</div>
+</div>
+</div>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(32,37,31,0.04)]" data-active-classes="text-primary font-semibold"><div class="h-16 px-space-sm flex items-center justify-around"><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home-feed" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-micro text-label-micro mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-micro text-label-micro mt-0.5">Explore</span></a><a class="flex items-center justify-center -mt-4 w-12 h-12 rounded-full bg-primary-container text-on-primary shadow-[0_2px_8px_rgba(36,91,67,0.3)] hover:bg-primary transition-all" data-path="create" href="#"><span class="material-symbols-outlined text-[26px]">add</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="activity" href="#"><span class="material-symbols-outlined text-[22px]">notifications_active</span><span class="font-label-micro text-label-micro mt-0.5">Activity</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-14 transition-colors text-primary font-semibold" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-micro text-label-micro mt-0.5">Profile</span></a></div></nav></body></html>

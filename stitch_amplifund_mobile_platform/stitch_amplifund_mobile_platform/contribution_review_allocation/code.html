@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#ffb575", "primary-container": "#245b43", "on-error-container": "#93000a", "error": "#ba1a1a", "secondary-fixed-dim": "#c1c8c1", "on-primary-fixed-variant": "#175039", "on-tertiary": "#ffffff", "outline-variant": "#c0c9c1", "inverse-surface": "#2d322b", "on-error": "#ffffff", "background": "#f6fbf1", "on-primary-fixed": "#002114", "secondary-container": "#dde4dc", "surface-container-highest": "#dfe4da", "secondary-fixed": "#dde4dc", "secondary": "#59605a", "tertiary-container": "#7c4300", "primary-fixed-dim": "#9ad3b4", "on-secondary-fixed": "#161d18", "on-secondary-fixed-variant": "#414843", "surface": "#f6fbf1", "inverse-on-surface": "#eef2e8", "on-secondary": "#ffffff", "on-surface-variant": "#404943", "on-primary": "#ffffff", "surface-container-low": "#f1f5eb", "on-surface": "#181d17", "surface-dim": "#d7dcd2", "primary": "#05432d", "tertiary-fixed-dim": "#ffb77a", "inverse-primary": "#9ad3b4", "surface-container-high": "#e5eae0", "error-container": "#ffdad6", "surface-container": "#ebefe6", "tertiary": "#5b2f00", "surface-bright": "#f6fbf1", "surface-container-lowest": "#ffffff", "on-background": "#181d17", "surface-variant": "#dfe4da", "on-tertiary-fixed": "#2e1500", "on-primary-container": "#98d1b2", "on-secondary-container": "#5f6660", "surface-tint": "#326850", "tertiary-fixed": "#ffdcc2", "primary-fixed": "#b5efd0", "outline": "#707973", "on-tertiary-fixed-variant": "#6d3a00" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-sm": "0.75rem", "space-xs": "0.25rem", "margin": "1.25rem", "gutter": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-desktop": "2.5rem", "space-xl": "2rem", "margin-mobile": "1rem", "gutter-lg": "1.5rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-micro": ["Plus Jakarta Sans"], "headline-lg": ["Newsreader"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Newsreader"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"] }, "fontSize": { "headline-sm": ["17px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-micro": ["10.5px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "display-lg": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.005em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["21px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Navigate back" class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-secondary-container/40 active:bg-secondary-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><div class="flex flex-col min-w-0"><span class="font-label-micro text-label-micro uppercase tracking-wider text-secondary">Amplify Dispatch</span><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Broadcast Allocation</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Bookmark story" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-secondary-container/40 active:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-[20px]">bookmark</span></button><button aria-label="Share campaign" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-secondary-container/40 active:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-[20px]">share</span></button><div class="w-8 h-8 ml-1 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-32">
+<!-- Step Breadcrumb Indicator Bar -->
+<div class="px-margin pt-4 pb-2">
+<div class="flex items-center justify-between text-secondary">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary text-on-primary font-label-micro text-[10px]">2</span>
+<span class="font-label-md text-label-md tracking-wider uppercase text-primary font-semibold">Step 2 of 3: Allocation Review</span>
+</div>
+<span class="font-label-micro text-label-micro text-secondary">Final Step: Demo Checkout</span>
+</div>
+<!-- Step progress track -->
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full mt-2 overflow-hidden flex">
+<div class="bg-primary h-full w-2/3 transition-all duration-500 rounded-full"></div>
+</div>
+</div>
+<div class="px-margin flex flex-col gap-4 mt-2">
+<!-- 1. Campaign Reference Brief Card -->
+<section class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="bg-secondary-container text-on-secondary-fixed font-label-micro text-label-micro uppercase tracking-wider px-2.5 py-1 rounded-full">
+          Environment &amp; Public Policy
+        </span>
+<span class="inline-flex items-center gap-1 text-primary text-xs font-semibold">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Verified Dossier
+        </span>
+</div>
+<div class="flex gap-3 items-start">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Editorial close-up documentary photograph of a dense metropolitan urban heat corridor with heavy asphalt streets juxtaposed against a proposed lush botanical buffer lane, warm atmospheric golden haze, cinematic journalistic photography in deep forest greens and earthen tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-Y2N4RdKYEqNRb-4fItRuAvCcZHbjeRgYIVjZhOP7xudvDv02TB8ylqLUvm7S0uDNKqnROgChfbnA2J3kxFrVcDg24ZzQWw3idvG-d5vnGNc9dhGh0ViYb2jKACN-bJgAi_ptMtf5gYhYgGq1CgQtdiy4l561Q2cP0p0fotz8FgMdzq4AzwAImFxEaXP0hFi1wnWXz-oL6UhCpTlv7gD0Tt5mx-EqIJrUeJZzMVaTPx-69F8XZTk"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-md text-headline-md text-on-surface line-clamp-2 leading-snug">
+            Why Urban Heat Islands Demand Mandatory Green Buffer Corridors
+          </h2>
+<div class="flex items-center gap-1.5 mt-1 text-secondary">
+<span class="material-symbols-outlined text-[14px]">psychology_alt</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Lead Steward: <strong class="text-on-surface font-medium">Dr. Ananya Sen</strong></span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Contribution & Itemized Fee Breakdown Card -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col">
+<div class="flex items-center justify-between pb-3">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Itemized Distribution Allocation</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">Audited civic broadcast schedule</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</div>
+</div>
+<div class="flex flex-col gap-3 py-3">
+<!-- Line Item 1 -->
+<div class="flex justify-between items-baseline py-1">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Gross Media Contribution</span>
+<span class="font-label-micro text-label-micro text-secondary uppercase tracking-wider">Committed pool tranche</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">₹250.00</span>
+</div>
+<!-- Breakdown sub-items with tinted container -->
+<div class="bg-surface-container-low rounded-lg p-3 flex flex-col gap-2.5">
+<!-- Line Item 2 -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col pr-2">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+                Targeted Ad Inventory (88%)
+              </span>
+<span class="font-body-sm text-body-sm text-secondary pl-3.5 leading-tight mt-0.5">
+                Direct Meta &amp; Local News digital feed syndication
+              </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium tabular-nums shrink-0">₹220.00</span>
+</div>
+<!-- Line Item 3 -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col pr-2">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary shrink-0"></span>
+                Independent Evidence Verification (8%)
+              </span>
+<span class="font-body-sm text-body-sm text-secondary pl-3.5 leading-tight mt-0.5">
+                Academic peer-review &amp; regional fact-checking desk
+              </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium tabular-nums shrink-0">₹20.00</span>
+</div>
+<!-- Line Item 4 -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col pr-2">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline shrink-0"></span>
+                Secure Escrow &amp; Gateway Fee (4%)
+              </span>
+<span class="font-body-sm text-body-sm text-secondary pl-3.5 leading-tight mt-0.5">
+                Encrypted UPI settlement and custodial compliance
+              </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium tabular-nums shrink-0">₹10.00</span>
+</div>
+</div>
+</div>
+<!-- Total Output Segment -->
+<div class="mt-2 pt-3 flex items-baseline justify-between bg-surface-container-high/40 px-3 py-3 rounded-lg">
+<div>
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-secondary">Total Payable Amount</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Includes all statutory ledger costs</p>
+</div>
+<div class="text-right">
+<span class="font-display-lg text-display-lg text-primary font-medium tracking-tight leading-none">₹250.00</span>
+</div>
+</div>
+</section>
+<!-- 3. Estimated Distribution Impact Summary -->
+<section class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">equalizer</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Estimated Distribution Impact</h3>
+</div>
+<!-- Bento-style metrics block -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col justify-between">
+<div class="flex items-center gap-1.5 text-secondary mb-1">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="font-label-micro text-label-micro uppercase tracking-wider">Projected Reach</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-medium leading-tight">1,850</div>
+<div class="font-body-sm text-body-sm text-secondary">verified impressions</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col justify-between">
+<div class="flex items-center gap-1.5 text-secondary mb-1">
+<span class="material-symbols-outlined text-[16px]">near_me</span>
+<span class="font-label-micro text-label-micro uppercase tracking-wider">Geo-Target</span>
+</div>
+<div>
+<div class="font-body-md text-body-md font-semibold text-on-surface leading-snug line-clamp-2">Ward 14–22</div>
+<div class="font-body-sm text-body-sm text-secondary truncate">Industrial Boundary Zones</div>
+</div>
+</div>
+</div>
+<!-- Campaign Total Metric Bar -->
+<div class="bg-surface-container p-3 rounded-lg flex flex-col gap-2 mt-1">
+<div class="flex justify-between items-center text-xs">
+<span class="font-body-sm text-body-sm text-secondary font-medium">New Campaign Total Raised</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">79% funded</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full rounded-full transition-all duration-700" style="width: 79%;"></div>
+</div>
+<div class="flex justify-between items-center font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">₹1,42,250</span>
+<span class="text-secondary">of ₹1,80,000 threshold</span>
+</div>
+</div>
+</section>
+<!-- 4. Backer Identity & Privacy Settings -->
+<section class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">shield_person</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Backer Identity &amp; Privacy</h3>
+</div>
+<div class="bg-surface-container-low p-3.5 rounded-lg flex flex-col gap-3">
+<div class="flex items-center justify-between gap-3">
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Public Ledger Listing</span>
+<span class="font-body-sm text-body-sm text-secondary transition-colors" id="privacy-status-label">
+              Private Backer — only your initials and amount are visible to audit logs
+            </span>
+</div>
+<!-- Toggle Component -->
+<button aria-checked="false" class="relative inline-flex h-7 w-12 shrink-0 cursor-pointer rounded-full bg-secondary-container transition-colors duration-200 ease-in-out focus:outline-none" id="privacy-toggle" onclick="toggleBackerPrivacy()" role="switch" type="button">
+<span class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow-md ring-0 transition duration-200 ease-in-out translate-x-1 mt-1" id="privacy-knob"></span>
+</button>
+</div>
+<div class="flex items-start gap-2 pt-2 text-secondary">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">lock</span>
+<p class="font-body-sm text-body-sm text-secondary leading-relaxed">
+            Your email and personal data are strictly custodial and never shared with creators, external lobbyists, or advertising brokers.
+          </p>
+</div>
+</div>
+</section>
+<!-- 5. Mandatory Legal & Refund Disclosure -->
+<section class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-3">
+<!-- Accordion Callout Panel -->
+<div class="bg-surface-container-high/50 rounded-lg p-3.5 flex flex-col gap-2">
+<div class="flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-[20px]">balance</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold text-xs uppercase tracking-wider">
+            Escrow &amp; Non-Donation Protocol
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          You are purchasing <strong>civic advertising syndication</strong>, not remitting a philanthropic donation. If the campaign does not reach the <span class="font-semibold text-on-surface">₹1,50,000 broadcast minimum</span> within <strong>6 days</strong>, your ₹250 will be automatically refunded in full to your source payment method within 48 hours without deductions.
+        </p>
+</div>
+<!-- Legal Acknowledgement Checkbox -->
+<label class="flex items-start gap-3 p-2 rounded-lg cursor-pointer select-none active:bg-surface-container">
+<div class="relative flex items-center justify-center mt-0.5">
+<input checked="" class="peer sr-only" id="legal-checkbox" onchange="validateCheckoutReadiness()" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-highest peer-checked:bg-primary transition-colors flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-on-primary text-[16px] opacity-0 peer-checked:opacity-100 transition-opacity">check</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium leading-snug">
+          I acknowledge this funds advertising space and verifiable message reach, not an unregulated individual donation.
+        </span>
+</label>
+</section>
+</div>
+<!-- 6. Sticky Floating Bottom Action Sheet -->
+<aside class="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest shadow-2xl pt-3 pb-safe px-margin">
+<div class="max-w-md mx-auto flex flex-col gap-2.5">
+<!-- Primary Amplification Action Button -->
+<button class="w-full h-12 bg-primary hover:bg-primary-container active:scale-[0.99] transition-all rounded-xl text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-md cursor-pointer" id="submit-allocation-btn" onclick="triggerDemoHandoff()" type="button">
+<span>Proceed to Demo Checkout</span>
+<span class="opacity-70">•</span>
+<span class="font-bold">₹250</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<!-- Security Trust Stamp -->
+<div class="flex items-center justify-center gap-1.5 pb-2 text-secondary">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-secondary">
+          256-bit Encrypted Escrow • Zero hidden fees
+        </span>
+</div>
+</div>
+</aside>
+</div>
+<script>
+  let isPublicBacker = false;
+
+  function toggleBackerPrivacy() {
+    isPublicBacker = !isPublicBacker;
+    const btn = document.getElementById('privacy-toggle');
+    const knob = document.getElementById('privacy-knob');
+    const label = document.getElementById('privacy-status-label');
+
+    btn.setAttribute('aria-checked', isPublicBacker.toString());
+    
+    if (isPublicBacker) {
+      btn.classList.remove('bg-secondary-container');
+      btn.classList.add('bg-primary');
+      knob.classList.remove('translate-x-1');
+      knob.classList.add('translate-x-6');
+      label.textContent = "Public Backer — your display handle will appear on the public support registry";
+      label.classList.add('text-primary');
+      label.classList.remove('text-secondary');
+    } else {
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-secondary-container');
+      knob.classList.remove('translate-x-6');
+      knob.classList.add('translate-x-1');
+      label.textContent = "Private Backer — only your initials and amount are visible to audit logs";
+      label.classList.remove('text-primary');
+      label.classList.add('text-secondary');
+    }
+  }
+
+  function validateCheckoutReadiness() {
+    const checkbox = document.getElementById('legal-checkbox');
+    const submitBtn = document.getElementById('submit-allocation-btn');
+    if (!checkbox.checked) {
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-40', 'cursor-not-allowed');
+    } else {
+      submitBtn.disabled = false;
+      submitBtn.classList.remove('opacity-40', 'cursor-not-allowed');
+    }
+  }
+
+  function triggerDemoHandoff() {
+    const btn = document.getElementById('submit-allocation-btn');
+    btn.innerHTML = `<span class="inline-block animate-spin mr-2">⟳</span> Authorizing Allocation...`;
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check_circle</span> Ready for Mock UPI Gateway`;
+      btn.classList.add('bg-primary-container');
+    }, 600);
+  }
+</script></main></body></html>
