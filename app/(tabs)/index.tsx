@@ -65,8 +65,7 @@ export default function HomeScreen() {
         pathname: '/explore',
         params: { q: searchQuery.trim() },
       });
-    } els
-    e {
+    } else {
       router.push('/explore');
     }
   };
